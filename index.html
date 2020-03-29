@@ -18,7 +18,7 @@
 				<span class="navbar-toggler-icon"></span>
       </button>
       <!-- navbar-brand -->
-      <a href="./index.html"><img src="img/logo.jpg" style="width:200px" alt="logo" class="logo-lg"></a>
+      <a href="./index.html"><img src="img/logo.png" style="width:200px" alt="logo" class="logo-lg"></a>
       
       <div class="buy-now order-md-last ml-md-2">
 				<button class="navbar-buy btn btn-primary"><a href="#contact-section" class="nav-link">Kup teraz</a></button>
@@ -353,7 +353,7 @@
 					O nas
 				</h2>
 				<p class="text-muted col-md-6 mx-auto">Jeśli chcesz poznać nas bliżej zapraszamy na naszego bloga!<br></p>
-                <a href="http://www.aboutlastnight.pl"><img src="img/logo.png" alt="logo" class="logo-sm"></a>
+                <a href="http://www.aboutlastnight.pl"><img src="img/logo1.png" alt="logo" class="logo-sm"></a>
             </div>
 			<div class="row">
 				<div class="col-md-6">
@@ -462,7 +462,18 @@
                             <input type="text" class="form-control mb-3" placeholder="Temat wiadomości" id="subject">
 							<p class="text-muted">Wybierz datę, którą chcesz zamówić</p>
 							<div class="alertTest" style="display:none">Upsss...tej daty już nie mamy</div>
-                            <input type="date" value="1992-09-08" class="form-control mb-3" placeholder="Wpisz datę jaką chcesz zamówić" id="date" min="1990-01-01" max="2002-06-08" required>
+                            <input type="date" value="1992-09-08" class="form-control mb-3" list="thesedates" placeholder="Wpisz datę jaką chcesz zamówić" id="date" min="1990-01-01" max="2002-06-08" required>
+							
+							<!-- <datalist id="thesedates">
+
+								<option label="niedostępna">1990-01-07</option> -->
+<!-- 							
+								<option label="niedostępna">2014-02-14</option>
+							
+								<option label="niedostępna">2014-06-14</option> -->
+							
+							<!-- </datalist>
+							 -->
 							<textarea cols="20" rows="8" class="form-control mb-3" placeholder="Zostaw dodatkowy komentarz" id="coment"></textarea>
 							<input type="submit" value="Prześlij" class="btn btn-primary">
 							<div class="alert">Twoja wiadomość została wysłana</div>

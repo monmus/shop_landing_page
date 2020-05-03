@@ -22,17 +22,37 @@ nav {
 }
 
 #home-section {
-    padding-top: 9rem;
-
+    padding-top: 6rem;
+    background: url(../img/front.jpg) no-repeat center/cover;
+    height: 695px;
+    background-color: rgb(253, 253, 253);
 
     img {
         max-height: 450px;
+        
     }
 
     @include mobile {
         h2 {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
+            position: relative;
+            bottom: -190px;
         }
+
+        p {
+            position: relative;
+            bottom: -195px;
+        }
+
+        button {
+            position: relative;
+            bottom: -195px;
+        }
+        
+        background: url(../img/front.jpg) no-repeat center/contain;
+        height: 400px;
+
+        
     }
 }
 
@@ -41,21 +61,49 @@ nav {
     padding-top: 4rem;
 
     img {
-        max-height: 400px;
+        max-height: 600px;
     }
 
     @include mobile {
         h2 {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
         }
     }
 }
+
+#product-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+.slideshow-container {  
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    .mySlides1{
+      img{
+      margin:0;
+      height: 300px;
+      background-size: cover;
+      padding: 5px;
+      }
+    }
+
+    @include mobile {
+        flex-wrap: wrap;
+        width: 100%;
+        }
+      
+  }
+}
+ 
 
 #feature-section {
     padding: 6rem 0 4rem 0;
 
     .feature-section-title {
-        padding-bottom: 3rem;
+        // padding-bottom: 3rem;
     }
 
     .col-md-4 {
@@ -119,6 +167,7 @@ nav {
     }
 }
 
+
 #product-section {
     padding: 3rem 0 2rem 0;
 
@@ -128,7 +177,6 @@ nav {
 
     .box {
         margin: 1rem;
-        padding: 2rem;
         box-shadow: 0 2px 6px rgba(63, 129, 204, 0.3);
         
         h5 {
@@ -136,6 +184,7 @@ nav {
         }
     }
 }
+
 
 #product-section1 {
     padding: 6rem 0 4rem 0;
@@ -170,14 +219,14 @@ nav {
 }
 
 #testimonial-section {
-    padding: 4rem 0 4rem 0;
+    padding: 0 0 4rem 0;
 
     .testimonial-section-title {
         padding-bottom: 3rem;
     }
 
     .text-box {
-        background: rgb(248, 249, 250);
+        // background: rgb(248, 249, 250);
         padding: 1rem;
         margin-bottom: 1rem;
     }
@@ -244,7 +293,7 @@ nav {
     }
 
     .contact-section-title {
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
     }
 
     .alert{

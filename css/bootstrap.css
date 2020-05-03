@@ -369,9 +369,9 @@
   .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0.5rem;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 200;
     line-height: 1.2;
-    color: inherit;
+    color: rgb(85, 85, 85);
   }
   
   h1, .h1 {
@@ -487,6 +487,12 @@
   .img-fluid {
     max-width: 100%;
     height: auto;
+    background-size: contain;
+  }
+
+  .img-test {
+    width: 600px;
+    height: auto;
   }
   
   .img-thumbnail {
@@ -559,6 +565,7 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 15px;
   }
   
   @media (min-width: 576px) {
@@ -624,6 +631,7 @@
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+    padding-top: 28px;
   }
   
   .col {
@@ -3884,7 +3892,7 @@
   }
   
   .nav-link {
-    display: block;
+    /* display: block; */
     padding: 0.5rem 1rem;
   }
   
@@ -6139,7 +6147,7 @@
   }
   
   .bg-light {
-    background-color: #f8f9fa !important;
+    background-color: white !important;
   }
   
   a.bg-light:hover, a.bg-light:focus,
@@ -8777,6 +8785,8 @@
   
   .text-center {
     text-align: center !important;
+    /* display: flex;
+    flex-direction: row; */
   }
   
   @media (min-width: 576px) {

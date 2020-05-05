@@ -102,6 +102,21 @@ nav {
 #feature-section {
     padding: 6rem 0 4rem 0;
 
+   .container .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    @include mobile {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
     .feature-section-title {
         // padding-bottom: 3rem;
     }
@@ -132,6 +147,8 @@ nav {
         }
     }
 }
+
+
 
 #core-section {
     padding: 4rem 0;
@@ -171,6 +188,12 @@ nav {
 #product-section {
     padding: 3rem 0 2rem 0;
 
+    @include mobile {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
     .product-section-title {
         padding-bottom: 3rem;
     }
@@ -186,8 +209,42 @@ nav {
 }
 
 
+#newsletter-section1 {
+    .newsletter-bg {
+        padding: 5rem 0;
+        background: url('../img/leaves.jpg');
+        height: 420px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 100%;
+        background-position: center;
+
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        input {
+            margin-bottom: 1rem;
+            border-radius: 10rem;
+            height: 3rem;
+
+            &[type="email"] {
+                text-indent: 1rem;
+            }
+        }
+    }
+}
+
 #product-section1 {
     padding: 6rem 0 4rem 0;
+
+    @include mobile {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
     
 
     .container {

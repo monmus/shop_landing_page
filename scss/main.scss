@@ -10,6 +10,8 @@ $mobile: 840px;
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+
 }
 
 .btn {
@@ -238,11 +240,12 @@ nav {
     @media (max-width: 640px) {
         .newsletter-bg {
             background: url('../img/leaves1.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
             background-attachment: fixed;
-            max-width: 100%;
+            background-repeat: no-repeat;
             background-position: center;
+            overflow: hidden;
         }
     }
 }
@@ -354,8 +357,13 @@ nav {
 
     @media (max-width: 640px) {
         .newsletter-bg {
-            background: url('../img/photo3.jpg');
-            background-size: cover;
+            background: url('../img/photo3.1.jpg');
+            background-size: contain;
+            width: 100%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow: hidden;
         }
     }
 }

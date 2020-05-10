@@ -241,11 +241,10 @@ nav {
         .newsletter-bg {
             background: url('../img/leaves1.jpg');
             background-size: contain;
-            width: 100%;
+            max-width: 100%;
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-position: center;
-            overflow: hidden;
         }
     }
 }
@@ -358,12 +357,12 @@ nav {
     @media (max-width: 640px) {
         .newsletter-bg {
             background: url('../img/photo3.1.jpg');
-            background-size: contain;
-            width: 100%;
+            -webkit-background-size: cover !important;
+            max-width: 100%;
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-position: center;
-            overflow: hidden;
+            z-index: -1 !important;
         }
     }
 }

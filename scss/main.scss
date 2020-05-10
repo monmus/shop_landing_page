@@ -217,7 +217,7 @@ nav {
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        width: 100%;
+        max-width: 100%;
         background-position: center;
 
         h3 {
@@ -233,6 +233,16 @@ nav {
             &[type="email"] {
                 text-indent: 1rem;
             }
+        }
+    }
+    @media (max-width: 640px) {
+        .newsletter-bg {
+            background: url('../img/leaves1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            max-width: 100%;
+            background-position: center;
         }
     }
 }
@@ -324,6 +334,7 @@ nav {
         background-attachment: fixed;
         width: 100%;
         background-position: center;
+    
 
         h3 {
             font-size: 2rem;
@@ -338,6 +349,13 @@ nav {
             &[type="email"] {
                 text-indent: 1rem;
             }
+        }
+    }
+
+    @media (max-width: 640px) {
+        .newsletter-bg {
+            background: url('../img/photo3.jpg');
+            background-size: cover;
         }
     }
 }

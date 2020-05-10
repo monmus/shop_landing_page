@@ -223,6 +223,7 @@ nav {
         background-attachment: fixed;
         max-width: 100%;
         background-position: center;
+        z-index: -1;
 
         h3 {
             font-size: 2rem;
@@ -340,6 +341,7 @@ nav {
         background-attachment: fixed;
         width: 100%;
         background-position: center;
+        z-index: -1;
         
     
 
@@ -362,12 +364,12 @@ nav {
     @media (max-width: 640px) {
         .newsletter-bg {
             background: url('../img/photo3.1.jpg');
-            // background-size: contain !important;
-            // max-width: 100%;
+            background-size: cover;
+            max-width: 100%;
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-position: center;
-            z-index: -1 !important;
+            z-index: -1;
         }
     }
 }

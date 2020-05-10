@@ -197,6 +197,10 @@ nav {
 
     .product-section-title {
         padding-bottom: 3rem;
+
+        @include mobile {
+            padding: 0;
+        }
     }
 
     .box {
@@ -246,6 +250,7 @@ nav {
             background-repeat: no-repeat;
             background-position: center;
             z-index: -1;
+            padding: 0;
 
         }
     }
@@ -256,6 +261,7 @@ nav {
     padding: 6rem 0 4rem 0;
 
     @include mobile {
+        padding: 0;
         h2 {
             font-size: 1.5rem;
         }
@@ -361,13 +367,14 @@ nav {
 
     @media (max-width: 640px) {
         .newsletter-bg {
-            background: url('../img/leaves.jpg');
+            background: url('../img/photo3.jpg');
             background-size: contain;
             max-width: 100%;
             // background-attachment: fixed;
             background-repeat: no-repeat;
             background-position: center;
             z-index: -1;
+            padding: 0;
         }
     }
 }

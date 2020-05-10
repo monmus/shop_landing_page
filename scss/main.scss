@@ -11,6 +11,8 @@ $mobile: 840px;
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+
 
 }
 
@@ -240,13 +242,14 @@ nav {
     @media (max-width: 640px) {
         .newsletter-bg {
             background: url('../img/leaves1.jpg');
-            background-size: contain;
+            background-size: cover;
             max-width: 100%;
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-position: center;
         }
     }
+
 }
 
 #product-section1 {
@@ -357,7 +360,7 @@ nav {
     @media (max-width: 640px) {
         .newsletter-bg {
             background: url('../img/photo3.1.jpg');
-            -webkit-background-size: cover !important;
+            background-size: cover !important;
             max-width: 100%;
             background-attachment: fixed;
             background-repeat: no-repeat;

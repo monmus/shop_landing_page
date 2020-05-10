@@ -334,11 +334,12 @@ nav {
         padding: 5rem 0;
         background: url('../img/photo3.jpg');
         height: 420px;
-        background-size: cover;
+        background-size: cover !important;
         background-repeat: no-repeat;
         background-attachment: fixed;
         width: 100%;
         background-position: center;
+        z-index: -1 !important;
     
 
         h3 {
@@ -357,17 +358,18 @@ nav {
         }
     }
 
-    @media (max-width: 640px) {
-        .newsletter-bg {
-            background: url('../img/photo3.1.jpg');
-            background-size: cover !important;
-            max-width: 100%;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-position: center;
-            z-index: -1 !important;
-        }
-    }
+    // @media (max-width: 640px) {
+    //     .newsletter-bg {
+    //         background: url('../img/photo3.1.jpg');
+    //         background-size: cover !important;
+    //         max-width: 100%;
+    //         background-attachment: fixed;
+    //         background-repeat: no-repeat;
+    //         background-position: center;
+         
+    //     }
+    // }
+    
 }
 
 #contact-section {
